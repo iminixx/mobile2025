@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'dart:io';
 import '../controllers/account_controller.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class AccountPage extends StatelessWidget {
   @override
@@ -34,6 +35,36 @@ class AccountPage extends StatelessWidget {
                           ElevatedButton(
                             onPressed: controller.pickImage,
                             child: Text("Ganti Foto Profil"),
+                          ),
+                          SizedBox(height: 10),
+                          ElevatedButton.icon(
+                            onPressed: controller.logout,
+                            icon: Icon(Icons.logout),
+                            label: Text("Logout"),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.red,
+                              foregroundColor: Colors.white,
+                            ),
+                          ),
+                          SizedBox(height: 20),
+                          Divider(),
+                          Text("Fitur Sensor-Driven", style: TextStyle(fontWeight: FontWeight.bold)),
+                          SizedBox(height: 10),
+                          ElevatedButton(
+                            onPressed: () => Get.toNamed('/camera'),
+                            child: Text("Kamera"),
+                          ),
+                          ElevatedButton(
+                            onPressed: () => Get.toNamed('/mic'),
+                            child: Text("Mikrofon"),
+                          ),
+                          ElevatedButton(
+                            onPressed: () => Get.toNamed('/speaker'),
+                            child: Text("Speaker"),
+                          ),
+                          ElevatedButton(
+                            onPressed: () => Get.toNamed('/location'),
+                            child: Text("Location"),
                           ),
                         ],
                       ),

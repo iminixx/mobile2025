@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "495071690051",
+    "project_id": "mobile2025-efd4e",
+    "storage_bucket": "mobile2025-efd4e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495071690051:android:a297269f8ed3a8ac6143f6",
+        "android_client_info": {
+          "package_name": "com.example.mobile25"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuVKGEiRnsSyNoeOIrkXF6doHiCVic4E0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
